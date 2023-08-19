@@ -106,9 +106,20 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-color: var(--navyblue);
 }
 .bg-hero {
-  background-color: var(--navyblue);
+  padding-top: 188px;
+  padding-bottom: 188px;
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office\ 1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -314,10 +325,6 @@ img {
 
 .team-social-icon {
   fill: currentColor;
-}
-
-.icon-antenna {
-  color: white;
 }
 
 .team-social-link:hover,
