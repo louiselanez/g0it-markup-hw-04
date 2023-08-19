@@ -108,7 +108,7 @@ img {
   padding-bottom: 200px;
   background-color: var(--navyblue);
 }
-.bg-hero {
+.hero-section {
   padding-top: 188px;
   padding-bottom: 188px;
   background-image: linear-gradient(
@@ -116,19 +116,20 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1.jpg);
+    url(../images/people-office.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .hero-title {
+  color: white;
   font-size: 56px;
-  line-height: 1.07;
   font-weight: 700;
-  letter-spacing: 0.06em;
-  color: var(--white);
-  margin-bottom: 30px;
+  line-height: 60px;
+  letter-spacing: 1.12px;
+  text-align: center;
+  margin-bottom: 48px;
 }
 
 .bg-team {
@@ -248,6 +249,24 @@ img {
   font-weight: 700;
 }
 
+.benefits-list-item {
+  background-color: var(--white);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.benefits-svg {
+  width: 264px;
+  height: 112px;
+  background-color: var(--cloud);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
 .what-we-do {
   display: flex;
   flex: wrap;
@@ -376,35 +395,52 @@ img {
   border-top: 0;
 }
 
-.icon-list {
-  display: flex;
-  gap: 30px;
-}
-
-.icon-item {
-  width: calc(100%-150px) / 6;
-  height: 90px;
-}
-
 .test-link {
-  width: 100%;
-  height: 100%;
+  width: 168px;
+  height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 5px;
-  color: #8e8f99;
+  display: flex;
   justify-content: center;
   align-items: center;
+  color: #8e8f99;
 }
 
 .test-icon {
-  width: 100px;
-  height: 60px;
+  width: 104px;
+  height: 56px;
   fill: currentColor;
+}
+
+.icon-list {
+  display: flex;
+  gap: 24px;
+}
+
+.icon-item {
+  width: calc((100% - 150px) / 6);
+  height: 90px;
+}
+
+.test-icon:hover,
+.test-icon:focus {
+  border-color: var(--ocean-color);
+  color: var(--ocean-color);
+}
+
+.test-link:hover,
+.test-link:focus {
+  border-color: var(--ocean-color);
+  color: var(--ocean-color);
 }
 
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-socials {
+  margin-left: 120px;
 }
 
 .page-footer.bg-footer {
