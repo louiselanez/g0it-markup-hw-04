@@ -44,6 +44,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .link {
@@ -116,7 +117,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.png);
+    url(../images/people-office\ 1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -322,8 +323,9 @@ img {
 .team-social-list {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 24px;
   list-style-type: none;
+  padding: 8px 16px;
 }
 
 .team-social-item {
@@ -354,14 +356,16 @@ img {
 .team {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  /* margin-top: -30px;
+  margin-left: -30px; */
+  /* gap: 24px; */
+  justify-content: space-between;
 }
 
 .team .item {
   flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  /* margin-left: 30px;
+  margin-top: 30px; */
   padding-bottom: 30px;
   background-color: white;
   border-radius: 0px 0px 4px 4px;
@@ -437,8 +441,17 @@ img {
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  /* display: flex; */
 }
-
+.footer-con {
+  display: flex;
+}
+.footer-heading {
+  color: var(--cloud);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
 .footer-socials {
   margin-left: 120px;
 }
