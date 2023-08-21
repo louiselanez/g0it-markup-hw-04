@@ -9,6 +9,7 @@
   --cloud: #f4f4fd;
   --blue: #404bbf;
   --cornflower: #e7e9fc;
+  --green: #31d0aa;
 }
 
 html {
@@ -319,6 +320,11 @@ img {
   margin-left: 30px;
   margin-top: 30px;
 }
+.project-card:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 
 .team-social-list {
   display: flex;
@@ -346,11 +352,13 @@ img {
 
 .team-social-icon {
   fill: currentColor;
+  width: 16px;
+  height: 16px;
 }
 
 .team-social-link:hover,
 .team-social-link:focus {
-  background-color: var(--navyblue);
+  background-color: var(--ocean);
 }
 
 .team {
@@ -434,10 +442,41 @@ img {
 
 .test-link:hover,
 .test-link:focus {
-  border-color: var(--ocean-color);
-  color: var(--ocean-color);
+  border-color: var(--ocean);
+  color: var(--ocean);
 }
 
+/* FOOTER */
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  list-style-type: none;
+  padding: 0;
+}
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+}
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  color: var(--white);
+  background-color: var(--iriscolor);
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.footer-social {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--green);
+}
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
